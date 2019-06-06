@@ -1,0 +1,19 @@
+#include <stdio.h>
+void stringcpy(char*,char*);
+int main(void) {
+    
+    char a[]="sahil";
+    char b[]="sagar";
+	stringcpy(a,b);
+	printf("%s",b);
+	return 0;
+}
+
+void stringcpy(char *s,char *t)
+{
+    while((*t=*s)!='\0')
+    {
+        t++;
+        s++;
+    }
+}
